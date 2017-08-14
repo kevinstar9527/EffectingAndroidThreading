@@ -10,6 +10,10 @@ import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+/**
+ * HandlerThread 建议初始化工作在onCreate方法中完成
+ * 消息发送在onResume或者点击事件监听中完成
+ */
 public class HandlerThreadingActivity extends AppCompatActivity {
     private ProgressDialog mDialog;
     private Handler mUiHandler = new Handler(){
